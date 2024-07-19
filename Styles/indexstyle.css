@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.navbar {
+    background-color: #f74c4c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.currency-icon {
+    background-color: #ffd700;
+    color: black;
+    border-radius: 50%;
+    padding: 5px 8px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header {
+    background-color: #f74c4c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.comparison-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.service-image {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    max-width: 150px; /* Máximo ancho de la imagen */
+    height: auto; /* Mantén la proporción de aspecto */
+    display: block; /* Asegura que se comporte como un elemento de bloque */
+    margin: 0 auto 20px; /* Centra la imagen horizontalmente y añade un margen inferior */
+}
+
+.user-avatars {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.join-time {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.features {
+    list-style-type: none;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.features li {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #f74c4c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    color: #f74c4c;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .comparison-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.service-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.features {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.features li {
+    margin: 5px 0;
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-primary {
+    background-color: #f74c4c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}

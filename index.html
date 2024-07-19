@@ -1,13 +1,16 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>InfinityXStream</title>
+        <title>InfinityXStream</title>  
+        <link rel="icon" href="images/LOGO2-removebg-preview.ico" type="image/x-icon">
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -16,211 +19,101 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="Styles/indexstyle.css">    
     </head>
-
-    <style>
-        .navbar {
-            background-color: #f74c4c;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            color: white;
-          }
-          
-          .logo {
-            font-weight: bold;
-            font-size: 1.5em;
-          }
-          
-          .nav-links {
-            display: flex;
-            list-style-type: none;
-          }
-          
-          .nav-links li {
-            margin: 0 10px;
-          }
-          
-          .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 0.9em;
-            padding: 5px 10px;
-            border-radius: 15px;
-          }
-          
-          .nav-links a.active {
-            background-color: rgba(255, 255, 255, 0.2);
-          }
-          
-          .nav-icons {
-            display: flex;
-            align-items: center;
-          }
-          
-          .currency-icon {
-            background-color: #ffd700;
-            color: black;
-            border-radius: 50%;
-            padding: 5px 8px;
-            margin-right: 10px;
-            text-decoration: none;
-            font-weight: bold;
-          }
-          
-          .profile-icon img {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            object-fit: cover;
-          }
-
-          
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-        
-        header {
-            background-color: #f74c4c;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        
-        .icons {
-            margin-top: 10px;
-        }
-        
-        .comparison-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-        
-        .service-card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin: 10px;
-            padding: 20px;
-            width: 300px;
-            text-align: center;
-        }
-        
-        .user-avatars {
-            display: flex;
-            justify-content: center;
-            margin: 10px 0;
-        }
-        
-        .join-time {
-            font-size: 0.8em;
-            color: #666;
-        }
-        
-        .price {
-            font-size: 1.5em;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-        
-        .features {
-            list-style-type: none;
-            text-align: left;
-            margin: 15px 0;
-        }
-        
-        .features li {
-            margin: 5px 0;
-        }
-        
-        button {
-            background-color: #f74c4c;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        
-        a {
-            display: block;
-            margin-top: 10px;
-            color: #f74c4c;
-            text-decoration: none;
-        }
-        
-        @media (max-width: 768px) {
-            .comparison-container {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
     <body>
         <nav class="navbar">
             <div class="logo">
-              <!-- Aquí puedes colocar tu logo o texto -->
-              <span>Logo</span>
+                <img src="images/aasasa-removebg-preview.png" alt="Logo">
             </div>
             <ul class="nav-links">
-              <li><a href="#" class="active">HOME PAGE</a></li>
-              <li><a href="#">AFFILIATE</a></li>
-              <li><a href="#">AFTER-SALES SUPPORT</a></li>
-              <li><a href="#">SUBSCRIPTION</a></li>
+                <li><a href="#" class="active">HOME PAGE</a></li>
+                <li><a href="#">AFFILIATE</a></li>
+                <li><a href="#">AFTER-SALES SUPPORT</a></li>
+                <li><a href="#">SUBSCRIPTION</a></li>
             </ul>
             <div class="nav-icons">
-              <a href="#" class="currency-icon">€</a>
-              <a href="#" class="profile-icon">
-                <img src="profile-icon.png" alt="Profile">
-              </a>
+                <a href="#" class="currency-icon">€</a>
+                <a href="#" class="profile-icon">
+                    <img src="profile-icon.png" alt="Profile">
+                </a>
             </div>
-          </nav>
-
-        <h1>Welcome to InfinityXStream</h1>
-        <h2>hellos</h2>
-
-
+        </nav>
+    
         <header>
-            <h1>Streaming Service Comparison</h1>
-            <p>Providing high-quality, affordable streaming for 5 years</p>
-            <div class="icons">
-                <!-- Add icons here -->
-            </div>
+            <h1>Streaming Service</h1>
+            <p>Proporcionar streaming asequible y de alta calidad</p>
+           
         </header>
-        <main>
-            <div class="comparison-container">
-                <!-- Create a card for each streaming service -->
-                <div class="service-card">
-                    <h2>Service Name</h2>
-                    <div class="user-avatars">
-                        <!-- Add user avatars here -->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <img src="images/channels4_profile.jpg" alt="Disney Plus Logo" class="service-image">
+                        <h2>Disney Plus</h2>
+                        <p class="price">$XX.XX / mes</p>
+                        <ul class="features">
+                            <li>Renovar la misma suscripción de por vida</li>
+                            <li>Mantenga todos sus favoritos y listas</li>
+                            <li>Entrega en tiempo real</li>
+                            <li>Móvil, PC, compatible con 4K</li>
+                            <li>Garantía, garantía de reembolso.</li>
+                        </ul>
+                        <button class="btn btn-primary">PURCHASE NOW</button>
+                        <a href="#">View more details</a>
                     </div>
-                    <p class="join-time">User joined X time ago</p>
-                    <p class="price">$XX.XX / month</p>
-                    <ul class="features">
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 3</li>
-                    </ul>
-                    <button>PURCHASE NOW</button>
-                    <a href="#">View more details</a>
                 </div>
-                <!-- Repeat service-card div for other services -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <h2>YouTube Premium</h2>
+                        <div class="user-avatars">
+                            <!-- Add user avatars here -->
+                        </div>
+                        <p class="price">$XX.XX / month</p>
+                        <ul class="features">
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                        <button class="btn btn-primary">PURCHASE NOW</button>
+                        <a href="#">View more details</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <h2>Disney Plus</h2>
+                        <div class="user-avatars">
+                            <!-- Add user avatars here -->
+                        </div>
+                        <p class="price">$XX.XX / month</p>
+                        <ul class="features">
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                        <button class="btn btn-primary">PURCHASE NOW</button>
+                        <a href="#">View more details</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <h2>Disney Plus</h2>
+                        <div class="user-avatars">
+                            <!-- Add user avatars here -->
+                        </div>
+                        <p class="price">$XX.XX / month</p>
+                        <ul class="features">
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                        <button class="btn btn-primary">PURCHASE NOW</button>
+                        <a href="#">View more details</a>
+                    </div>
+                </div>
             </div>
-        </main>
+        </div>
+        
 
         <!-- Bootstrap JavaScript Libraries -->
         <script
