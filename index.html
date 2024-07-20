@@ -20,6 +20,8 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="Styles/indexstyle.css">    
+
+
     </head>
     <body>
         <nav class="navbar">
@@ -28,12 +30,10 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#" class="active">Inicio</a></li>
-                <li><a href="#">AFTER-SALES SUPPORT</a></li>
             </ul>
             <div class="nav-icons">
-                <a href="#" class="currency-icon">€</a>
                 <a href="#" class="profile-icon">
-                    <img src="profile-icon.png" alt="Profile">
+                    <img src="images/aasasa-removebg-preview.png" alt="Profile">
                 </a>
             </div>
         </nav>
@@ -81,19 +81,22 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="service-card">
-                        <img src="images/netflix-symbol-black.png" alt="Disney Plus Logo" class="service-image">
+                        <img src="images/netflix-symbol-black.png" alt="Netflix Logo" class="service-image">
                         <h2>Netflix</h2>
                         <div class="user-avatars">
                             <!-- Add user avatars here -->
                         </div>
-                        <p class="price">$XX.XX / month</p>
+                        <p class="price">$XX.XX / mes</p>
                         <ul class="features">
-                            <li>Feature 1</li>
-                            <li>Feature 2</li>
-                            <li>Feature 3</li>
+                            <li>Renovar la misma suscripción de por vida</li>
+                            <li>Mantenga todos sus favoritos y listas</li>
+                            <li>Entrega en tiempo real</li>
+                            <li>Móvil, PC, compatible con 4K</li>
+                            <li>Garantía, garantía de reembolso.</li>
                         </ul>
-                        <button class="btn btn-primary">PURCHASE NOW</button>
-                        <a href="#">View more details</a>
+                        <button class="btn btn-primary" onclick="mandarMensaje()">Comprar Ahora</button>
+                        <a href="#" data-toggle="modal" data-target="#netflixModal">Ver más detalles</a>
+
                     </div>
                 </div>
                 
@@ -120,6 +123,81 @@
             </div>
         </div>
 
+
+        <div class="modal fade" id="netflixModal" tabindex="-1" aria-labelledby="netflixModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="netflixModalLabel">Netflix Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Contenido del modal -->
+                        <p>Detalles adicionales sobre Netflix</p>
+                        <div class="netflix-card">
+                            <div class="left-section">
+                              <div class="logo-container">
+                                <img src="netflix-logo.png" alt="Netflix Logo" class="netflix-logo">
+                                <div class="features">
+                                  <span>DOLBY VISION</span>
+                                  <span>DOLBY ATMOS</span>
+                                  <span>HDR</span>
+                                  <span>4K UltraHD</span>
+                                </div>
+                              </div>
+                              <div class="user-joined">
+                                <img src="user-avatar.png" alt="User Avatar" class="user-avatar">
+                                <span>a***ii joined 3 hours ago</span>
+                              </div>
+                            </div>
+                            
+                            <div class="center-section">
+                              <h2>Netflix</h2>
+                              <div class="info-grid">
+                                <div class="info-item">
+                                  <span class="icon">🏷️</span>
+                                  <span class="label">Plan:</span>
+                                  <span class="value">Premium</span>
+                                </div>
+                                <div class="info-item">
+                                  <span class="icon">🔄</span>
+                                  <span class="label">Is it renewable?</span>
+                                  <span class="value">Yes</span>
+                                </div>
+                                <div class="info-item">
+                                  <span class="icon">📱</span>
+                                  <span class="label">Supported devices:</span>
+                                  <span class="value">PC, Mobile, PS, XBox, iPad</span>
+                                </div>
+                                <div class="info-item">
+                                  <span class="icon">🔑</span>
+                                  <span class="label">Credential type:</span>
+                                  <span class="value">Passkey</span>
+                                </div>
+                              </div>
+                              <p class="description">Watch NF(4K) movies and TV shows online, on your smart TV, game console, PC, Mac, smartphone, tablet and more.</p>
+                            </div>
+                            
+                            <div class="right-section">
+                              <div class="rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="satisfaction">98% User Satisfaction</span>
+                              </div>
+                              <div class="price">MX$66.29 <span>/month</span></div>
+                              <button class="join-button">JOIN NOW ></button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="JavaScript/funcioneswhatsapp.js"></script> <!-- Funcionalidad del telefono -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
