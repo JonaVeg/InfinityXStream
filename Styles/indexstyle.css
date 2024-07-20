@@ -65,13 +65,28 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
-
 header {
     background-color: #f74c4c;
     color: white;
     text-align: center;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-family: 'Arial Black', sans-serif;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 0;
+    font-family: 'Arial', sans-serif;
+}
+
 
 .icons {
     margin-top: 10px;

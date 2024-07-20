@@ -43,6 +43,8 @@
             <p>Proporcionar streaming asequible y de alta calidad</p>
            
         </header>
+
+
         <div class="container mt-4">
             <div class="row">
                 <div class="col-md-4 mb-4">
@@ -101,6 +103,225 @@
                         </ul>
                         <button class="btn btn-primary" onclick="mandarMensaje()">Comprar Ahora</button>
                         <a href="#" data-toggle="modal" data-target="#netflixModal">Ver más detalles</a>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="disneyPlusModal" tabindex="-1" aria-labelledby="disneyPlusModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="disneyPlusModalLabel">Disney Plus Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Contenido del modal -->
+                        <p>Detalles adicionales sobre Disney Plus...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Prime Video Modal -->
+         
+    <div class="modal fade" id="primeModal" tabindex="-1" aria-labelledby="primeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="primeModalLabel">Prime Video</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del modal -->
+                    <p>Detalles adicionales sobre Prime Video</p>
+                    <div class="prime-card">
+                        <div class="left-section">
+                            <div class="logo-container">
+                                <img src="images/Video.jpg" alt="Prime Video Logo" class="prime-logo">
+                                <div class="features">
+                                    <span>4K UHD</span>
+                                    <span>HDR</span>
+                                    <span>Dolby Atmos</span>
+                                    <span>Compatible con múltiples dispositivos</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="center-section">
+                            <h2>Prime Video</h2>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <span class="icon">🏷️</span>
+                                    <span class="label">Plan:</span>
+                                    <span class="value">Premium</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">🔄</span>
+                                    <span class="label">¿Es renovable?</span>
+                                    <span class="value">Sí</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="icon">📱</span>
+                                    <span class="label">Dispositivos soportados:</span>
+                                    <span class="value">PC, Mobile, Smart TV, Console</span>
+                                </div>
+                            </div>
+                            <p class="description">Disfruta de películas y programas de TV en línea con Prime Video en tu televisor inteligente, consola de juegos, PC, Mac, smartphone y tablet.</p>
+                        </div>
+                        
+                        <div class="right-section">
+                            <div class="rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="satisfaction">95% de satisfacción del usuario</span>
+                            </div>
+                            <div class="price">MX$65.99 <span>/mes</span></div>
+                            <button class="btn btn-primary" onclick="mandarMensaje()">Comprar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="modal fade" id="netflixModal" tabindex="-1" aria-labelledby="netflixModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="netflixModalLabel">Netflix </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Contenido del modal -->
+                        <p>Detalles adicionales sobre Netflix</p>
+                        <div class="netflix-card">
+                            <div class="left-section">
+                                <div class="logo-container">
+                                    <img src="images/netflix-symbol-black.png" alt="Netflix Logo" class="netflix-logo">
+                                    <div class="features">
+                                        <span>DOLBY VISION</span>
+                                        <span>DOLBY ATMOS</span>
+                                        <span>HDR</span>
+                                        <span>4K UltraHD</span>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            
+                            <div class="center-section">
+                                <h2>Netflix</h2>
+                                <div class="info-grid">
+                                    <div class="info-item">
+                                        <span class="icon">🏷️</span>
+                                        <span class="label">Plan:</span>
+                                        <span class="value">Premium</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="icon">🔄</span>
+                                        <span class="label">¿Es renovable?</span>
+                                        <span class="value">Si</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="icon">📱</span>
+                                        <span class="label">Dispositivos soportados:</span>
+                                        <span class="value">PC, Mobile, PS, XBox, iPad</span>
+                                    </div>
+                                    
+                                </div>
+                                <p class="description">Mire películas y programas de TV NF(4K) en línea, en su televisor inteligente, consola de juegos, PC, Mac, teléfono inteligente y tableta </p>
+                            </div>
+                            
+                            <div class="right-section">
+                                <div class="rating">
+                                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                                    <span class="satisfaction">98% de satisfacción del usuario</span>
+                                </div>
+                                <div class="price">MX$80.99 <span>/mes</span></div>
+                                <button class="btn btn-primary" onclick="mandarMensaje()">Comprar Ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------------Segunda seccion ---------------------->
+
+
+        
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <img src="images/Paramount.png" alt="Disney Plus Logo" class="service-image">
+                        <h2>Paramount +</h2>
+                        Proximamente
+                        <p class="price">$XX.XX / mes</p>
+                        <!--<ul class="features">
+                            <li>Suscripción estable</li>
+                            <li>Clasificaciones de contenido: 18+/R18(21)/TV-MA</li>
+                            <li> Entrega en tiempo real</li>
+                            <li>Admite múltiples dispositivos: teléfono móvil, computadora, TV</li>
+                            <li>Reembolso sin preocupaciones</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="mandarMensaje()">Comprar Ahora</button>
+                        <a href="#" data-toggle="modal" data-target="#disneyPlusModal">Ver más detalles</a>-->
+           
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <img src="images/Spot.png" alt="Disney Plus Logo" class="service-image">
+                        <h2>Spotify</h2>
+                        
+                        <p class="price">$XX.XX / mes</p>
+                        <ul class="features">
+                            <li>Calidad de sonido excepcional</li>
+                            <li>Millones de canciones y podcasts</li>
+                            <li>Sin anuncios con Spotify Premium </li>
+                            <li>Listas de reproducción personalizadas </li>
+                            <li>Modo offline: escucha sin conexión </li>
+                            <li>Acceso a nuevos lanzamientos </li>
+                            <li>Integración con redes sociales </li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="mandarMensaje()">Comprar Ahora</button>
+                        <!--<a href="#" data-toggle="modal" data-target="#primeModal">Ver más detalles</a>-->
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <img src="images/YTP.png" alt="Netflix Logo" class="service-image">
+                        <p>Proximamente</p>
+                        <h2>YouTube Premium</h2>
+                        <div class="user-avatars">
+                            <!-- Add user avatars here -->
+                        </div>
+                        <p class="price">$XX.XX / mes</p>
+                        <!--<ul class="features">
+                            
+                            <li>Mantenga todos sus favoritos y listas</li>
+                            <li>Entrega en tiempo real</li>
+                            <li>Móvil, PC, compatible con 4K</li>
+                            <li>Garantía, garantía de reembolso.</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="mandarMensaje()">Comprar Ahora</button>
+                        <a href="#" data-toggle="modal" data-target="#netflixModal">Ver más detalles</a>-->
 
                     </div>
                 </div>
