@@ -195,127 +195,130 @@ a {
     cursor: pointer;
     font-weight: bold;
 }
-
 /* ---------MODAL DE NETFLIX-----------*/
-
 .netflix-card {
     display: flex;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    max-width: 1000px;
-    margin: 20px auto;
-    font-family: Arial, sans-serif;
-  }
-  
-  .left-section {
-    flex: 1;
-  }
-  
-  .logo-container {
-    background-color: #E50914;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.netflix-card > div {
+    flex: 1 1 100%;
+}
+
+.left-section, .right-section {
     text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .netflix-logo {
-    width: 100%;
-    max-width: 150px;
-  }
-  
-  .features {
-    font-size: 12px;
-    margin-top: 10px;
-  }
-  
-  .user-joined {
+}
+
+.logo-container, .user-joined, .rating, .price {
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.info-item {
     display: flex;
     align-items: center;
-    font-size: 14px;
-  }
-  
-  .user-avatar {
-    width: 30px;
-    height: 30px;
+    justify-content: space-between;
+}
+
+.user-avatar {
     border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .center-section {
-    flex: 2;
-    padding: 0 20px;
-  }
-  
-  h2 {
-    margin-top: 0;
-  }
-  
-  .info-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-  
-  .info-item {
-    font-size: 14px;
-  }
-  
-  .icon {
-    margin-right: 5px;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .description {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .right-section {
-    flex: 1;
-    text-align: right;
-  }
-  
-  .rating {
-    margin-bottom: 20px;
-  }
-  
-  .stars {
-    color: #FFD700;
-  }
-  
-  .satisfaction {
-    font-weight: bold;
-    color: #E50914;
-  }
-  
-  .price {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .price span {
-    font-size: 16px;
-    color: #666;
-  }
-  
-  .join-button {
-    background-color: #E50914;
+    width: 50px;
+    height: 50px;
+}
+
+.netflix-logo {
+    width: 100px;
+    height: auto;
+}
+
+.join-button {
+    background-color: #e50914;
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 20px;
+    font-size: 1.2em;
     cursor: pointer;
-    font-weight: bold;
-  }
+}
+
+@media (min-width: 768px) {
+    .netflix-card > div {
+        flex: 1;
+    }
+}
 /* ---------FIN DEL MODAL DE NETFLIX-----------*/
 
 
 
+/*---------------PRIME VIDEO-----------------*/
+.prime-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.prime-card > div {
+    flex: 1 1 100%;
+}
+
+.left-section, .right-section {
+    text-align: center;
+}
+
+.logo-container, .rating, .price {
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prime-logo {
+    width: 100px;
+    height: auto;
+}
+
+.join-button {
+    background-color: #00a8e1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .prime-card > div {
+        flex: 1;
+    }
+}
+/*---------------FIN DE PRIME VIDEO-----------------*/
